@@ -8,7 +8,7 @@
 	"label": "Engage",
 	"shortLabel": "Engage",
 	"paletteLabel": "Engage",
-	"image": "gauge.with.dots.needle.bottom.50percent.badge.plus"
+	"image": "brain"
 }*/
 (() => {
 	const action = new PlugIn.Action(async function(selection, sender){
