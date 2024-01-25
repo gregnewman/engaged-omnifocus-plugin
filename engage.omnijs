@@ -4,7 +4,7 @@
 	"author": "Greg Newman",
 	"identifier": "com.gregnewman.of.Engage",
 	"version": "0.1",
-	"description": "Engage creates a recurring task in a Project named 'Engaged'.",
+	"description": "Engage creates a task in a Project named 'Engaged'.",
 	"label": "Engage",
 	"shortLabel": "Engage",
 	"paletteLabel": "Engage",
