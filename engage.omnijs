@@ -1,0 +1,50 @@
+/*{
+	"type": "action",
+	"targets": ["omnifocus"],
+	"author": "Greg Newman",
+	"identifier": "com.gregnewman.of.Engage",
+	"version": "0.1",
+	"description": "Engage creates a recurring task in a Project named 'Engaged'.",
+	"label": "Engage",
+	"shortLabel": "Engage",
+	"paletteLabel": "Engage",
+	"image": "gauge.with.dots.needle.bottom.50percent.badge.plus"
+}*/
+(() => {
+	const action = new PlugIn.Action(async function(selection, sender){
+		try {
+			// Get the `Engaged` Project and if it doesn't exist alert the user with the error
+			project = flattenedProjects.byName("Engaged")
+			if (project) {
+				// Get current selected project and create a title and backlink
+				var currentProject = selection.databaseObjects[0]; // selection.projects[0];
+				var newActionTitle = "Develop: " + currentProject.name;
+				var linkURLStr = "omnifocus:///task/" + currentProject.id.primaryKey
+
+				// Create a new task with the title of the selected project and a note linking to it
+				var newTask = new Task(newActionTitle, project)
+				newTask.note = linkURLStr
+
+				// Go to the Engaged Project
+				URL.fromString("omnifocus:///task/" + project.id.primaryKey).open()
+			} else {
+				new Alert("Engaged Not Found", "Please create a project titled 'Engaged'").show()
+			}
+		}
+		catch(err){
+			if(!err.causedByUserCancelling){
+				console.error(err.name, err.message)
+				//new Alert(err.name, err.message).show()
+			}
+		}
+	});
+
+	action.validate = function(selection, sender){
+		return (
+			selection.databaseObjects.length === 1 &&
+			selection.projects.length === 1
+		)
+	};
+
+	return action;
+})();
