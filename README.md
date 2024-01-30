@@ -1,6 +1,8 @@
 # Engaged OmniFocus Plugin
 
-Inspired by the navigation concept in [Kourosh Dini's book Creating Flow with Omnifocus](https://www.kouroshdini.com/course-books/). It is sometimes more effective to have a navigation task that shows up on the Forecast perspective instead of a long list of individual tasks contained in a project which ultimately results in a long forecast or today perspective. This plugin creates a new Task inside an "Engaged" Project with a link back to the selected Project where the automation was triggered.
+Inspired by the navigation concept in [Kourosh Dini's book Creating Flow with Omnifocus](https://www.kouroshdini.com/course-books/). It is sometimes more effective to have a navigation task that shows up on the Forecast perspective instead of a long list of individual tasks contained in a project which ultimately results in a long forecast or today perspective.  Furthermore I find it helpful in getting a larger picture of the projects I need to touch daily. 
+
+This plugin creates a new Task inside an "Engaged" Project with a link back to the selected Project where the automation was triggered.
 
 ## Installation Instructions
 
@@ -15,4 +17,6 @@ Inspired by the navigation concept in [Kourosh Dini's book Creating Flow with Om
 ![CleanShot 2024-01-30 at 11 18 55](https://github.com/gregnewman/engaged-omnifocus-plugin/assets/2026/ab54f6f8-381c-4c26-9002-432b656ea600)
 
 
-Select a project in OmniFocus then choose Engage from the automation dropdown (or add the plugin to your toolbar).  A new Task is created inside the "Engaged" project. Upon completion the plugin navigates to the "Engaged" project which will allow you to set other metadata for the Task.  I personally will sometimes add a repeat.
+Select a project in your OmniFocus database, then choose Engage from the automation dropdown (or add the plugin to your toolbar).  A new Task is created inside your "Engaged" project. Upon completion the plugin navigates to the "Engaged" project which will allow you to set other metadata for the Task.  I personally will sometimes add a repeat.
+
+Following Kourosh's method, I also have a "Parked" project set to paused to house projects I can't work on right now.
