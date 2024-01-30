@@ -2,6 +2,12 @@
 
 Inspired by the navigation concept in [Kourosh Dini's book Creating Flow with Omnifocus](https://www.kouroshdini.com/course-books/). It is sometimes more effective to have a navigation task that shows up on the Forecast perspective instead of a long list of individual tasks contained in a project which ultimately results in a long forecast or today perspective. This plugin creates a new Task inside an "Engaged" Project with a link back to the selected Project where the automation was triggered.
 
+## Installation Instructions
+
+* Use OmniFocus 3.8+ Professional.
+* Download and unzip this repository.
+* On Mac: Go to Automation menu option and choose Configure. Right-click on either "On My Mac" or "OmniFocus in iCloud Drive" and choose "Reveal in Finder". Move the plugin file `engage.omnijs` to the folder.
+
 ## How To Use
 
 ⚠️ *Note:* The plugin expects that a project named "Engaged" exists somewhere in the database.
