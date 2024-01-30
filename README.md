@@ -12,4 +12,7 @@ Inspired by the navigation concept in [Kourosh Dini's book Creating Flow with Om
 
 ⚠️ *Note:* The plugin expects that a project named "Engaged" exists somewhere in the database.
 
+![CleanShot 2024-01-30 at 11 18 55](https://github.com/gregnewman/engaged-omnifocus-plugin/assets/2026/ab54f6f8-381c-4c26-9002-432b656ea600)
+
+
 Select a project in OmniFocus then choose Engage from the automation dropdown (or add the plugin to your toolbar).  A new Task is created inside the "Engaged" project. Upon completion the plugin navigates to the "Engaged" project which will allow you to set other metadata for the Task.  I personally will sometimes add a repeat.
